@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.aixuexiao.dao.EMailSenderDao">
+
+	<select id="selectAllEMailSenders" resultMap="EMailSenderMap">
+		select id,userName,telephone,message,inserttime
+		from eMailSender
+		order by id desc
+	</select>
+
+	<select id="selectEMailSenders" parameterType="java.util.HashMap" resultMap="EMailSenderMap">
+		select id,userName,telephone,message,inserttime
+		from eMailSender
+		<where>
+			<if test="classes!=null">
+				<if test="classes.userName!=null">
+					userName like CONCAT('%','${classes.userName}','%' )
+				</if>
+			</if>
+		</where>
+		order by id desc
+		limit #{start},#{size}
+	</select>
+
+	<insert id="addEMailSender" parameterType="com.aixuexiao.model.EMailSender">
+		insert into eMailSender (userName,telephone,message,inserttime)
+		values(#{userName},#{telephone},#{message},CURRENT_TIMESTAMP)
+	</insert>
+
+	<resultMap type="EMailSender" id="EMailSenderMap">
+		<id property="id" column="id" />
+		<result property="userName" column="userName" />
+		<result property="telephone" column="telephone" />
+		<result property="message" column="message" />
+		<result property="inserttime" column="inserttime" />
+	</resultMap>
+
+</mapper>

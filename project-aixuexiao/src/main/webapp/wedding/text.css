@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+.top{
+	background-image:url(img/01.png);
+	height:10px;
+	width:1080px;
+	margin:0 auto;}
+.grey{
+	background-image:url(img/02.jpg);
+	height:1022px;
+	width:1080px;
+	margin:0 auto;}
+.grey1{
+	background-image:url(img/03.png);
+	height:10px;
+	width:1080px;
+	margin:0 auto;}
+.grey2{
+	background-image:url(img/04.jpg);
+	height:744px;
+	width:1080px;
+	margin:0 auto;}
+.foot{
+	background-image:url(img/05.png);
+	height:12px;
+	width:1080px;
+	margin:0 auto;}
+.space{
+	height:65px;}
+.text{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:30px;
+	color:#3c2e2c;
+	text-align:center;}
+.text1{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	color:#2d2d2d;}
+.text3{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	color:#2d2d2d;}
+.text4{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:20px;
+	color:#3c2e2c;}
+.grid_3.prefix_2{
+	position:relative;
+}
+.text2{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:24px;
+	color:#3c2e2c;}
+.text1{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#3c2e2c;}
+.text5{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#3c2e2c;}	
+.vlinks{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#3c2e2c;
+	float:right;}
+.vlinks a {
+color: #3c2e2c;
+text-decoration:none;
+}
+.vlinks a:hover {
+	color:#000;
+}
+.grid_12.img{
+	text-align:center;
+	}
+.grid_12.img1{
+		height:220px;}
+.grid_12.space1{
+	height:32px;}
+.colortext {
+    background-color: #e0e0db;
+	height:36px;
+	width:437px;
+	font-size:20px;
+	border-color:#b9b9b3;
+	margin-top:10px;
+}
+.colortext1 {
+    background-color: #e0e0db;
+	height:155px;
+	width:600px;
+	font-size:20px;
+
+	vertical-align:bottom;
+	border-color:#b9b9b3;}
+.grid_12.top2{
+	height:20px;	}
+.buttonsubmit{
+	position:relative;
+	float:right;
+	padding-right:10px;}
+.grid_12.space2{
+	height:25px;}
+.grid_12.space3{
+	height:20px;}
+	#to_cool {
+	font-size: 180px;
+	font-family: sans-serif;
+
+	line-height: 220px;
+	font-weight: bold;
+	height: 300px;
+	color: #494949;
+	width: 500px;
+	height:220px;
+	position: absolute;
+	left: 100px;
+	transition: text-indent .3s ease-in;
+    -o-transition: text-indent .3s ease-in;
+    -moz-transition: text-indent .3s ease-in;
+    -webkit-transition: text-indent .3s linear;
+}
+
+#to_cool canvas {
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+#to_cool.active {
+	text-indent: -15px;
+}
+
+
+@font-face {
+    font-family: 'WisdomScriptAIRegular';
+    src: url('wisdom_script-webfont.eot');
+    src: url('wisdom_script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('wisdom_script-webfont.woff') format('woff'),
+         url('wisdom_script-webfont.ttf') format('truetype'),
+         url('wisdom_script-webfont.svg#WisdomScriptAIRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

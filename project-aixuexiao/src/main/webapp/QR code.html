@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>二维码生成页面</title>
+</head>
+<body>
+	<h1>二维码生成页面</h1>
+</body>
+
+网页自动生成二维码代码(将如下js代码放入到需要转换的页面上,即可获取该页面url对应的二维码图片,图片尺寸可以根据需要进行修改)：<br/>
+
+<script type="text/javascript"> 
+//thisURL = document.URL; 
+thisURL='http://wasabili0.duapp.com//emailIndex';
+strwrite = "<img src='https://chart.googleapis.com/chart?cht=qr&chs=150x150&choe=UTF-8&chld=L|4&chl=" + thisURL + "' width='250' height='250' alt='当前网址URL二维码JS生成' />";
+document.write( strwrite ); 
+</script>
+
+
+</html>

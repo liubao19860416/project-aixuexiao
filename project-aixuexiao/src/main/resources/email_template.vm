@@ -1,0 +1,48 @@
+<html>
+<head>
+<style type="text/css"> 
+	h4{  
+		color:red;  
+		background:#efefef;  
+		font-size: large;
+		background-color: gray;
+		font: italic;
+	}
+	table{  
+		color:red;  
+		font:italic;  
+		font-size: x-large;
+		border-color: blue;
+		width: 60%;
+	}
+	tr{  
+		color:red;  
+		font:italic;  
+		font-size: x-large;
+		border-color: blue;
+		width: 60%;
+	}
+</style> 
+
+</head> 
+	<body> 
+		<table border="1" align="center" >
+		<tr>
+			<th colspan="2">邮件主题信息</th>
+		</tr>
+		<tr>
+			<td>姓名:</td>
+			<td>${userName}</td>
+		</tr>
+		<tr>
+			<td>电话:</td>
+			<td>${telephone}</td>
+		</tr>
+		<tr>
+			<td>备注信息:</td>
+			<td>${message}</td>
+		</tr>
+	</table>
+	<br/>
+	</body> 
+</html> 
